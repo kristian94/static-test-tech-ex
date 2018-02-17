@@ -41,9 +41,13 @@ The tool uses McCabe's CC variation
 #### e, d)
 
 The refactoring i did was based on the results of my unit tests (https://github.com/kristian94/triangle/blob/master/test.js)
-The tests revealed that my "isIsosceles" function would also return true for triangles with 3 of the same side. I edited the
-function to return false in cases where the sides were all equal, which
+The tests revealed that my "isIsosceles" function would also return true for triangles with 3 of the same side. 
 
+![alt text](https://github.com/kristian94/static-test-tech-ex/blob/master/img/not%20passed.PNG)
+
+I edited the function to return false in cases where the sides were all equal, which made the tests pass:
+
+![alt text](https://github.com/kristian94/static-test-tech-ex/blob/master/img/passed.PNG)
 
 ## 3. Peer Review Checklist
 
