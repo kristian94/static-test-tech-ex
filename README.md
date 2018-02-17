@@ -1,6 +1,7 @@
 # static-test-tech-ex
 
-triangle ex repo: https://github.com/kristian94/triangle
+This document is based on the triangle assignment.
+The code the assignment can be found here: https://github.com/kristian94/triangle
 
 ## 2. Static Code Analysis of Triangle Program
 
@@ -91,7 +92,7 @@ My proposed fix is to prepend all the people references with "Catalog.", or alte
 
 There are many standards you can apply to maintain a higher standard of coding quality. Personally, one of the most important things i look out for is the size of my files. A single file should not contain several thousand lines of code, since this makes it overly complex and harder to maintain. When i write code i try to look for oppoturnities to split my code into self-contained modules, that have as a little external dependencies as possible. When code is too reliant on other pieces of code, it creates dependencies that are hard to resolve, and it makes it difficult to make changes without breaking anything. Another thing i like to do is to always declare variables as immutable (unless i know it has to mutate). This prevents a lot of side-effects and makes your code a bit more predictable, and variables should rarely have to mutate anyway. I try to keep functions as pure as possible. This means a function should not have any side effects, and should, given the same input, always return a certain output. Functions should also be kept single-purpose to ensure reusability and easier maintainability. When working with arrays i generally use map or reduce functions over for-loops, as these produce cleaner and more readable code. I try to be consistent with variable naming, and I avoid single-letter variables. Sometimes it can be neccesary to give your variables long names, to accurately explain their purpose in the code. I usually find that descriptive variable names makes the code easier to understand.
 
-## 6. 
+## 6. Lecture Highlights
 
 The biggest thing i took away from the presentation, is the importance of the tester "mindset". As a dev, you have to test and maintain your own code. There is not always going to be a dedicated tester, and even if there are, you need to develop with the assumption that you code will have to pass a lot of tests and should work under as many circumstances as possible. Coding with testing in mind leads to more robust code, that will be less likely to fail. She also spoke a lot about the cost of fixing bugs, and how much you can save
 by testing during development, and preventing bugs from happening in the first place. I was also a bit surprised at how many
