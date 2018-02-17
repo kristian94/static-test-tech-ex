@@ -1,0 +1,369 @@
+{
+    "reports": [
+        {
+            "aggregate": {
+                "sloc": {
+                    "logical": 4,
+                    "physical": 10
+                },
+                "cyclomatic": 1,
+                "halstead": {
+                    "operators": {
+                        "distinct": 6,
+                        "total": 12,
+                        "identifiers": [
+                            "const",
+                            "=",
+                            "()",
+                            ".",
+                            "new",
+                            "[]"
+                        ]
+                    },
+                    "operands": {
+                        "distinct": 11,
+                        "total": 13,
+                        "identifiers": [
+                            "Triangle",
+                            "\"./triangle\"",
+                            "require",
+                            "process",
+                            "argv",
+                            "t",
+                            "<anonymous>",
+                            "a",
+                            "b",
+                            "c",
+                            "printProperties"
+                        ]
+                    },
+                    "length": 25,
+                    "vocabulary": 17,
+                    "difficulty": 3.545454545454546,
+                    "volume": 102.1865710312585,
+                    "effort": 362.29784274718924,
+                    "bugs": 0.03406219034375283,
+                    "time": 20.1276579303994
+                },
+                "params": 0,
+                "line": 1,
+                "cyclomaticDensity": 25
+            },
+            "functions": [],
+            "dependencies": [
+                {
+                    "line": 1,
+                    "path": "./triangle",
+                    "type": "CommonJS"
+                }
+            ],
+            "maintainability": 128.38979542889652,
+            "loc": 4,
+            "cyclomatic": 1,
+            "effort": 362.29784274718924,
+            "params": 0,
+            "path": "C:\\SOFT\\repos\\triangle\\app.js"
+        },
+        {
+            "aggregate": {
+                "sloc": {
+                    "logical": 12,
+                    "physical": 26
+                },
+                "cyclomatic": 6,
+                "halstead": {
+                    "operators": {
+                        "distinct": 10,
+                        "total": 71,
+                        "identifiers": [
+                            "function",
+                            "=",
+                            ".",
+                            "return",
+                            "&&",
+                            "==",
+                            "||",
+                            "!==",
+                            "()",
+                            ":?"
+                        ]
+                    },
+                    "operands": {
+                        "distinct": 21,
+                        "total": 75,
+                        "identifiers": [
+                            "Triangle",
+                            "sides",
+                            "prototype",
+                            "isEquilateral",
+                            "<anonymous>",
+                            "this",
+                            "a",
+                            "b",
+                            "c",
+                            "isIsosceles",
+                            "isScalene",
+                            "printProperties",
+                            "\"Your triangle is:\"",
+                            "console",
+                            "log",
+                            "\"Equilateral!\"",
+                            "\"Isosceles!\"",
+                            "\"Scalene!\"",
+                            "\"Not really special :/\"",
+                            "module",
+                            "exports"
+                        ]
+                    },
+                    "length": 146,
+                    "vocabulary": 31,
+                    "difficulty": 17.857142857142858,
+                    "volume": 723.3126613164839,
+                    "effort": 12916.297523508641,
+                    "bugs": 0.24110422043882795,
+                    "time": 717.572084639369
+                },
+                "params": 1,
+                "line": 4,
+                "cyclomaticDensity": 50
+            },
+            "functions": [
+                {
+                    "name": "Triangle",
+                    "sloc": {
+                        "logical": 1,
+                        "physical": 4
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 1,
+                            "total": 1,
+                            "identifiers": [
+                                "="
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 1,
+                            "total": 2,
+                            "identifiers": [
+                                "sides"
+                            ]
+                        },
+                        "length": 3,
+                        "vocabulary": 2,
+                        "difficulty": 1,
+                        "volume": 3,
+                        "effort": 3,
+                        "bugs": 0.001,
+                        "time": 0.16666666666666666
+                    },
+                    "params": 1,
+                    "line": 4,
+                    "cyclomaticDensity": 100
+                },
+                {
+                    "name": "<anonymous>.isEquilateral",
+                    "sloc": {
+                        "logical": 1,
+                        "physical": 3
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 8,
+                            "identifiers": [
+                                "return",
+                                "&&",
+                                "==",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 4,
+                            "total": 8,
+                            "identifiers": [
+                                "this",
+                                "a",
+                                "b",
+                                "c"
+                            ]
+                        },
+                        "length": 16,
+                        "vocabulary": 8,
+                        "difficulty": 4,
+                        "volume": 48,
+                        "effort": 192,
+                        "bugs": 0.016,
+                        "time": 10.666666666666666
+                    },
+                    "params": 0,
+                    "line": 9,
+                    "cyclomaticDensity": 100
+                },
+                {
+                    "name": "<anonymous>.isIsosceles",
+                    "sloc": {
+                        "logical": 1,
+                        "physical": 3
+                    },
+                    "cyclomatic": 3,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 12,
+                            "identifiers": [
+                                "return",
+                                "||",
+                                "==",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 4,
+                            "total": 12,
+                            "identifiers": [
+                                "this",
+                                "a",
+                                "b",
+                                "c"
+                            ]
+                        },
+                        "length": 24,
+                        "vocabulary": 8,
+                        "difficulty": 6,
+                        "volume": 72,
+                        "effort": 432,
+                        "bugs": 0.024,
+                        "time": 24
+                    },
+                    "params": 0,
+                    "line": 13,
+                    "cyclomaticDensity": 300
+                },
+                {
+                    "name": "<anonymous>.isScalene",
+                    "sloc": {
+                        "logical": 1,
+                        "physical": 3
+                    },
+                    "cyclomatic": 1,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 4,
+                            "total": 12,
+                            "identifiers": [
+                                "return",
+                                "&&",
+                                "!==",
+                                "."
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 4,
+                            "total": 12,
+                            "identifiers": [
+                                "this",
+                                "a",
+                                "b",
+                                "c"
+                            ]
+                        },
+                        "length": 24,
+                        "vocabulary": 8,
+                        "difficulty": 6,
+                        "volume": 72,
+                        "effort": 432,
+                        "bugs": 0.024,
+                        "time": 24
+                    },
+                    "params": 0,
+                    "line": 17,
+                    "cyclomaticDensity": 100
+                },
+                {
+                    "name": "<anonymous>.printProperties",
+                    "sloc": {
+                        "logical": 2,
+                        "physical": 7
+                    },
+                    "cyclomatic": 4,
+                    "halstead": {
+                        "operators": {
+                            "distinct": 3,
+                            "total": 19,
+                            "identifiers": [
+                                "()",
+                                ".",
+                                ":?"
+                            ]
+                        },
+                        "operands": {
+                            "distinct": 11,
+                            "total": 21,
+                            "identifiers": [
+                                "\"Your triangle is:\"",
+                                "console",
+                                "log",
+                                "this",
+                                "isEquilateral",
+                                "\"Equilateral!\"",
+                                "isIsosceles",
+                                "\"Isosceles!\"",
+                                "isScalene",
+                                "\"Scalene!\"",
+                                "\"Not really special :/\""
+                            ]
+                        },
+                        "length": 40,
+                        "vocabulary": 14,
+                        "difficulty": 2.8636363636363638,
+                        "volume": 152.29419688230416,
+                        "effort": 436.11520016296197,
+                        "bugs": 0.05076473229410139,
+                        "time": 24.228622231275665
+                    },
+                    "params": 0,
+                    "line": 21,
+                    "cyclomaticDensity": 200
+                }
+            ],
+            "dependencies": [],
+            "maintainability": 148.3911863827451,
+            "loc": 1.2,
+            "cyclomatic": 2,
+            "effort": 299.0230400325924,
+            "params": 0.2,
+            "path": "C:\\SOFT\\repos\\triangle\\triangle.js"
+        }
+    ],
+    "adjacencyMatrix": [
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "firstOrderDensity": 0,
+    "visibilityMatrix": [
+        [
+            0,
+            0
+        ],
+        [
+            0,
+            0
+        ]
+    ],
+    "changeCost": 50,
+    "coreSize": 0,
+    "loc": 2.6,
+    "cyclomatic": 1.5,
+    "effort": 330.6604413898908,
+    "params": 0.1,
+    "maintainability": 138.3904909058208
+}
