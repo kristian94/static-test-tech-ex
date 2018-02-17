@@ -1,5 +1,7 @@
 # static-test-tech-ex
 
+triangle ex repo: https://github.com/kristian94/triangle
+
 ## 2. Static Code Analysis of Triangle Program
 
 #### a) Analysis tool
@@ -36,8 +38,11 @@ With this in mind, it would be hard to reduce the CC value for the function. You
 
 The tool uses McCabe's CC variation
 
-#### e)
+#### e, d)
 
+The refactoring i did was based on the results of my unit tests (https://github.com/kristian94/triangle/blob/master/test.js)
+The tests revealed that my "isIsosceles" function would also return true for triangles with 3 of the same side. I edited the
+function to return false in cases where the sides were all equal, which
 
 
 ## 3. Peer Review Checklist
