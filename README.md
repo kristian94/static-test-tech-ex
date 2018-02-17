@@ -6,7 +6,7 @@ triangle ex repo: https://github.com/kristian94/triangle
 
 #### a) Analysis tool
 
-Installed "complexity-report", a tool for statically analyzing Javascript (Node.js) code. The tool is run from the command line
+I installed "complexity-report", a tool for statically analyzing Javascript (Node.js) code. The tool is run from the command line
 and produces an output file with metrics.
 
 #### b) Results of initial anlysis
@@ -33,6 +33,13 @@ This means we need 3 test cases to check all the happy path cases.
 
 With this in mind, it would be hard to reduce the CC value for the function. You could reduce the amount of conditional statements by instead iterating over the 3 values, counting occurences of unique values, and return true if the occurence of a value equated to 2, but this would probably make the function harder to understand and would not really serve to improve maintainablitiy, performance or anything like that.
 
+#### c)
+
+Metrics for my application can be found here:
+
+ - Before refactoring: https://github.com/kristian94/static-test-tech-ex/blob/master/metrics/metrics-pre.json
+
+ - After refactoring: https://github.com/kristian94/static-test-tech-ex/blob/master/metrics/metrics-post.json
 
 #### d)
 
@@ -70,3 +77,16 @@ review in itself brings value, but the benefit of having a good review culture i
 assumption that their code is to be reviewed, and (without realising it) they will be more inclined to produce code that is 
 of a higher quality. #10 is to practice lightweight code reviews. Code reviews can be time consuming and should not take
 up too much of the dev teams time. There are many different ways to do it, some are more rigid and others a lighter.
+
+## 4. Example Code Review
+
+In the example it looks like the static variable "people" is accessed from a non-static context. I would expect the code to fail and an
+exception to be raised due to this. To my knowledge you would have to access a static variable in such a context by it's class name eg:
+```
+Catalog.people
+```
+My proposed fix is to prepend all the people references with "Catalog."
+
+## 5. Coding Standards Document
+
+There are many standards you can apply to maintain a higher standard of coding quality. Personally, one of the most important things i look out for is the size of my files. A single file should not contain several thousand lines of code, since this makes it overly complex and harder to maintain. When i write code i try to look for oppoturnities to split my code into self-contained modules, that have as a little external dependencies as possible. When code is too reliant on other pieces of code, it creates dependencies that are hard to resolve, and it makes it difficult to make changes without breaking anything. Another thing i like to do is to always declare variables as immutable (unless i know it has to mutate). This prevents a lot of side-effects and makes your code a bit more predictable, and variables should rarely have to mutate anyway. I try to keep functions as pure as possible. This means a function should not have any side effects, and should, given the same input, always return a certain output. Functions should also be kept single-purpose to ensure reusability and easier maintainability. When working with arrays i generally use map or reduce functions over for-loops, as these produce cleaner and more readable code. I try to be consistent with variable naming, and I avoid single-letter variables.
