@@ -32,3 +32,32 @@ This means we need 3 test cases to check all the happy path cases.
 With this in mind, it would be hard to reduce the CC value for the function. You could reduce the amount of conditional statements by instead iterating over the 3 values, counting occurences of unique values, and return true if the occurence of a value equated to 2, but this would probably make the function harder to understand and would not really serve to improve maintainablitiy, performance or anything like that.
 
 
+#### d)
+
+The tool uses McCabe's CC variation
+
+#### e)
+
+
+
+## 3. Peer Review Checklist
+
+The checklist is a number of practices that can be applied when reviewing the code of a fellow programmer, and is divided
+into 10 tips. The first tip is to review fewer than 400 lines of code at a time. The reasoning behind this, is that the brain
+can only effectively process so much information, so to get a quality review, this limit should not be exceeded. Tip #2 is to
+take your time and not rush the review. This is, in accordance with tip #1, about keeping the quality of the review at a
+certain level. If the review is not accurate and does not discover a high enough percentage of the bugs in the code, it can
+be more misleading than helpful, since the code might not get reviewed a second time. Tip #3 is to not review for more than 60
+minutes at a time. Again about keeping focus. #4 is to set goals and capture metrics. This is about measuring the effectiveness
+of the review, so you can look for ways to improve the review process. #5 is that authros should annotate their code before the
+review. If you have a particularly complex piece of code, annotations can be very helpful in understanding the purpose of the
+code. This will make it clearer for the reviewer, where he/she needs to look for bugs in the code. #6 is to use checklists. This
+is to prevent that the same mistakes are made over and over. #7 is to establish a process for fixing defects found. This is about
+establishing guidelines for how to fix the bugs that are found after the review. The bugs need to be communicated effectively
+to the dev, so that they can be fixed reliably. #8 is to foster a positive code review culture. Code reviews can be a delicate
+matter, since the responsible dev can feel attacked. It is important to communicate in a constructive way, so that the 
+relationship between the team members is not strained. 9# is to embrace the subconscious implications of the peer review. The
+review in itself brings value, but the benefit of having a good review culture is that the developers will work under the 
+assumption that their code is to be reviewed, and (without realising it) they will be more inclined to produce code that is 
+of a higher quality. #10 is to practice lightweight code reviews. Code reviews can be time consuming and should not take
+up too much of the dev teams time. There are many different ways to do it, some are more rigid and others a lighter.
